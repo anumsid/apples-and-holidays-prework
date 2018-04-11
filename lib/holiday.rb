@@ -64,6 +64,7 @@ holiday_hash.each do |season, data|
     capitalized_h = holiday.to_s.split("_")
     capitalized_h.each do |word|
       word.capitalize!
+    end
       string = capitalized_h.join(" ")
 
       puts "  #{string}: #{supplies.join(', ')}"
