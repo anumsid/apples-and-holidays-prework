@@ -62,7 +62,7 @@ holiday_hash.each do |season, data|
     puts "#{season.to_s.capitalize!}:"
   data.each do |holiday, supplies|
     capitalized_h = holiday.to_s.split("_")
-    capitalized_h.each do |word| 
+    capitalized_h.each do |word|
       word.capitalize!
     end
       string = capitalized_h.join(" ")
@@ -80,8 +80,11 @@ def all_holidays_with_bbq(holiday_hash)
   newarray = []
 
   holiday_hash.each do |season, data|
-    data.each do |holiday, supply|
-      newarray << holiday
+    data.each do |holiday, supply_array|
+      supply_array.each do |supply|
+        if supply == "BBQ"
+          newarray << holiday
+      end
     end
   end
   newarray
