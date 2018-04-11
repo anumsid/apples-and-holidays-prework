@@ -84,4 +84,5 @@ def all_holidays_with_bbq(holiday_hash)
       newarray << holiday
     end
   end
+  newarray
 end
