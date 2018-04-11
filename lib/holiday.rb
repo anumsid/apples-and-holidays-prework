@@ -62,7 +62,7 @@ holiday_hash.each do |season, data|
     puts "#{season.to_s.capitalize!}:"
   data.each do |holiday, supplies|
     capitalized_h = holiday.to_s.split("_")
-    capitalized_h.each do |word| [new, years]
+    capitalized_h.each do |word| 
       word.capitalize!
     end
       string = capitalized_h.join(" ")
