@@ -69,7 +69,6 @@ holiday_hash.each do |season, data|
 
       puts "  #{string}: #{supplies.join(', ')}"
     end
-  end
 end
 end
 
